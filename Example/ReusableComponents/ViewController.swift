@@ -11,9 +11,10 @@ import ReusableComponents
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var testButton: PrimaryButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = PrimaryButton()
+        
 //        let button = PrimaryButton()
 //        button.printBut()
     }
