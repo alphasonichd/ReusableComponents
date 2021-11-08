@@ -14,7 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let button = PrimaryButton()
-        button.printBut()
+//        let button = PrimaryButton()
+//        button.printBut()
     }
 
     override func didReceiveMemoryWarning() {
