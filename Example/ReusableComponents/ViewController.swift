@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import ReusableComponents
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        let button = PrimaryButton()
+        button.printBut()
     }
 
     override func didReceiveMemoryWarning() {

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ReusableComponents'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ReusableComponents.'
+  s.summary          = 'Reusable UI components for iOS Applications.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,23 +18,24 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
+  'Reusable UI components for iOS Applications. Created for BSL dev.'
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Alexander Snitko/ReusableComponents'
+  s.homepage         = 'https://github.com/alphasonichd/ReusableComponents'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alexander Snitko' => 'a.snitko@bsl.dev' }
-  s.source           = { :git => 'https://github.com/Alexander Snitko/ReusableComponents.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/alphasonichd/ReusableComponents.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.swift_version = '4.0'
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'ReusableComponents/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ReusableComponents' => ['ReusableComponents/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'Resources' => ['ReusableComponents/Assets/Group 458-2.pdf']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
