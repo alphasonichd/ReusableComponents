@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -44,15 +45,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liX-iy-A7n" customClass="PrimaryTextField" customModule="ReusableComponents">
+                                <rect key="frame" x="32" y="368.5" width="311" height="58"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="zqz-2p-ItW"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ffh-a4-O32" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="TjF-Na-r5i"/>
                             <constraint firstItem="ffh-a4-O32" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="X1J-SP-uTv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="liX-iy-A7n" secondAttribute="trailing" constant="16" id="ZsE-I7-pmM"/>
+                            <constraint firstItem="liX-iy-A7n" firstAttribute="top" secondItem="ffh-a4-O32" secondAttribute="bottom" constant="10" id="aEL-RY-Tvd"/>
+                            <constraint firstItem="liX-iy-A7n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="qZs-o8-x7W"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="testButton" destination="ffh-a4-O32" id="xkN-Yg-m9Z"/>
+                        <outlet property="testTextField" destination="liX-iy-A7n" id="h7q-OG-oE0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -65,4 +77,9 @@
             <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

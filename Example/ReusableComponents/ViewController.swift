@@ -12,11 +12,10 @@ import ReusableComponents
 class ViewController: UIViewController {
 
     @IBOutlet weak var testButton: PrimaryButton!
+    @IBOutlet weak var testTextField: PrimaryTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let button = PrimaryButton()
-//        button.printBut()
     }
 
     override func didReceiveMemoryWarning() {
