@@ -21,7 +21,6 @@ public class PrimaryTextField: UIView {
     
     private func commonInit() {
         guard let contentView = Bundle(for: PrimaryTextField.self).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as? UIView else { return }
-//        guard let contentView = Bundle.main.loadNibNamed(String (describing: type(of: self)), owner: self, options: nil)?.first as? UIView else { return }
         addSubview(contentView)
         contentView.frame = self.bounds
         contentView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
