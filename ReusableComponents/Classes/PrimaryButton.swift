@@ -7,26 +7,37 @@
 
 import UIKit
 
-@IBDesignable public class PrimaryButton: UIButton {
+@IBDesignable
+public class PrimaryButton: UIButton {
     
-    @IBInspectable var disabledBackgroundColor: UIColor? {
+    @IBInspectable
+    var disabledBackgroundColor: UIColor? {
         set { setBackgroundColor(newValue ?? .black, for: .disabled) }
         get { return self.backgroundColor }
     }
     
-    @IBInspectable var enabledBackgroundColor: UIColor? {
+    @IBInspectable
+    var enabledBackgroundColor: UIColor? {
         set { setBackgroundColor(newValue ?? .black, for: .normal) }
         get { return self.backgroundColor }
     }
     
-    @IBInspectable var disabledTitleColor: UIColor? {
+    @IBInspectable
+    var disabledTitleColor: UIColor? {
         set { setTitleColor(newValue, for: .disabled) }
         get { return self.titleColor(for: .disabled) }
     }
     
-    @IBInspectable var enabledTitleColor: UIColor? {
+    @IBInspectable
+    var enabledTitleColor: UIColor? {
         set { setTitleColor(newValue, for: .normal) }
         get { return self.titleColor(for: .normal) }
+    }
+    
+    @IBInspectable
+    var cornerRadius: CGFloat {
+        set { layer.cornerRadius = newValue }
+        get { return layer.cornerRadius }
     }
     
     override init(frame: CGRect) {
@@ -61,8 +72,6 @@ import UIKit
     private func setBackgroundColor(_ color: UIColor, for state: UIControl.State) {
         self.setBackgroundImage(image(withColor: color), for: state)
     }
-    
-    
 }
 
 
