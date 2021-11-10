@@ -12,6 +12,15 @@ enum TrailingButtonTypes {
     case password
 }
 
+enum TextFiledTypes {
+    case email
+    case phone
+    case date
+    case name
+    case surname
+    case patronymic
+}
+
 @IBDesignable
 class PrimaryTextView: UIView {
     
@@ -26,6 +35,8 @@ class PrimaryTextView: UIView {
             configureTrailingImage()
         }
     }
+    
+    var textFieldType: TextFiledTypes?
     
     @IBInspectable
     var trailingButtonImage: UIImage = UIImage()
@@ -159,13 +170,11 @@ class PrimaryTextView: UIView {
             
             floatingLabel.animate(font: UIFont.systemFont(ofSize: 22), duration: 0.3, aligment: .leading)
         }
-        
-        
-
-        
+        showInvalidData()
         UIView.animate(withDuration: 0.3) {
             self.layoutIfNeeded()
         }
+        
     }
     
     private func configureTrailingImage() {
@@ -177,6 +186,11 @@ class PrimaryTextView: UIView {
         ])
         self.trailingButton.isHidden = true
         layoutIfNeeded()
+    }
+    
+    private func showInvalidData() {
+        self.layer.borderWidth = 1
+        self.layer.borderColor = UIColor.red.cgColor
     }
 }
 
