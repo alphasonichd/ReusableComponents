@@ -52,13 +52,31 @@
                                     <constraint firstAttribute="height" constant="58" id="zqz-2p-ItW"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRI-nN-Hfd" customClass="PrimaryTextView" customModule="ReusableComponents">
+                                <rect key="frame" x="32" y="230.5" width="311" height="58"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="58" id="tRl-y9-Shn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="textFieldHeight">
+                                        <real key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="superviewBackgoundColor">
+                                        <color key="value" red="0.88235294119999996" green="0.80392156859999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="jRI-nN-Hfd" secondAttribute="trailing" constant="16" id="7pp-St-kjn"/>
+                            <constraint firstItem="ffh-a4-O32" firstAttribute="top" secondItem="jRI-nN-Hfd" secondAttribute="bottom" constant="20" id="Hro-XT-vlE"/>
                             <constraint firstItem="ffh-a4-O32" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="TjF-Na-r5i"/>
                             <constraint firstItem="ffh-a4-O32" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="X1J-SP-uTv"/>
                             <constraint firstAttribute="trailingMargin" secondItem="liX-iy-A7n" secondAttribute="trailing" constant="16" id="ZsE-I7-pmM"/>
                             <constraint firstItem="liX-iy-A7n" firstAttribute="top" secondItem="ffh-a4-O32" secondAttribute="bottom" constant="10" id="aEL-RY-Tvd"/>
+                            <constraint firstItem="jRI-nN-Hfd" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="plj-8W-Ei2"/>
                             <constraint firstItem="liX-iy-A7n" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="16" id="qZs-o8-x7W"/>
                         </constraints>
                     </view>
