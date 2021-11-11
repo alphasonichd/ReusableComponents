@@ -56,7 +56,7 @@ class PrimaryTextView: UIView {
     }
     
     @IBInspectable
-    var labelHeight: CGFloat = 17
+    var labelHeight: CGFloat = 22
     
     @IBInspectable
     var labelColor: UIColor = UIColor.gray {
