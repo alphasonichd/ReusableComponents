@@ -22,7 +22,7 @@ enum TextFiledTypes {
 }
 
 @IBDesignable
-class PrimaryTextView: UIView {
+public class PrimaryTextView: UIView {
     
     var floatingLabel: UILabel = UILabel(frame: CGRect.zero)
     var textField: UITextField = UITextField(frame: CGRect.zero)
